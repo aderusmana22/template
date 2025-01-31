@@ -1,6 +1,6 @@
 <x-app-layout>
     @section('title')
-        Create MPDR
+        Edit PREMPDR
     @endsection
 
     @push('css')
@@ -11,13 +11,13 @@
         <div class="card-body px-4 py-3">
             <div class="row align-items-center">
                 <div class="col-9">
-                    <h4 class="fw-semibold mb-8">Create MPDR</h4>
+                    <h4 class="fw-semibold mb-8">Edit PREMPDR</h4>
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb">
                             <li class="breadcrumb-item">
                                 <a class="text-muted text-decoration-none" href="{{ route('dashboard') }}">Home</a>
                             </li>
-                            <li class="breadcrumb-item" aria-current="page">Create MPDR</li>
+                            <li class="breadcrumb-item" aria-current="page">Edit PREMPDR</li>
                         </ol>
                     </nav>
                 </div>
@@ -37,7 +37,7 @@
     <div class="card">
         <div class="card-body">
            <div class="table-responsive">
-           
+
            </div>
         </div>
     </div>
