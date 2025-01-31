@@ -67,4 +67,14 @@ class MpdrController extends Controller
     {
         return view('page.mpdr.report-mpdr');
     }
+
+    public function approval()
+    {
+        return view('page.mpdr.approval-mpdr');
+    }
+
+    public function log()
+    {
+        return view('page.mpdr.log-mpdr');
+    }
 }

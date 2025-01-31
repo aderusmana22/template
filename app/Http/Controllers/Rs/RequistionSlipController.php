@@ -1,18 +1,18 @@
 <?php
 
-namespace App\Http\Controllers\PreMpdr;
+namespace App\Http\Controllers\Rs;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
-class PreMpdrController extends Controller
+class RequistionSlipController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        return view('page.pre-mpdr.list-prempdr');
+        return \view('page.rs.list-rs');
     }
 
     /**
@@ -20,7 +20,7 @@ class PreMpdrController extends Controller
      */
     public function create()
     {
-        return view('page.pre-mpdr.create-prempdr');
+        return \view('page.rs.create-rs');
 
     }
 
@@ -45,7 +45,7 @@ class PreMpdrController extends Controller
      */
     public function edit(string $id)
     {
-        return view('page.pre-mpdr.edit-prempdr');
+        return \view('page.rs.edit-rs');
 
     }
 
@@ -67,16 +67,16 @@ class PreMpdrController extends Controller
 
     public function report()
     {
-        return view('page.pre-mpdr.report-prempdr');
+        return view('page.rs.report-rs');
     }
 
     public function approval()
     {
-        return view('page.pre-mpdr.approval-prempdr');
+        return view('page.rs.approval-rs');
     }
 
     public function log()
     {
-        return view('page.pre-mpdr.log-prempdr');
+        return view('page.rs.log-rs');
     }
 }

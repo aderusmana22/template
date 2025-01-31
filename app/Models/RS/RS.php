@@ -9,5 +9,7 @@ class RS extends Model
 {
     use HasFactory;
 
-    
+    protected $table = 'rs';
+    protected $guarded =['id'];
+
 }

@@ -17,6 +17,7 @@
     },
     "dependencies": {
         "bootstrap": "^5.3.3",
-        "iconify-icon": "^2.3.0"
+        "iconify-icon": "^2.3.0",
+        "turbolinks": "^5.2.0"
     }
 }

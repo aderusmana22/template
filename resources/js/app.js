@@ -1,8 +1,6 @@
 import './bootstrap';
+import Turbolinks from 'turbolinks';
 
+Turbolinks.start();
 
-import Alpine from 'alpinejs';
-
-window.Alpine = Alpine;
-
-Alpine.start();
+Turbolinks.setProgressBarDelay(100);

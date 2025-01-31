@@ -8,4 +8,8 @@ use Illuminate\Database\Eloquent\Model;
 class PreMpdr extends Model
 {
     use HasFactory;
+
+    protected $table = 'pre_mpdr';
+    protected $guarded =['id'];
+
 }

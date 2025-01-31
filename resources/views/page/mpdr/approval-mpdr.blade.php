@@ -1,6 +1,6 @@
 <x-app-layout>
     @section('title')
-        List Requisition Slip
+        List Approval MPDR
     @endsection
 
     @push('css')
@@ -11,13 +11,13 @@
         <div class="card-body px-4 py-3">
             <div class="row align-items-center">
                 <div class="col-9">
-                    <h4 class="fw-semibold mb-8">List Requisition Slip</h4>
+                    <h4 class="fw-semibold mb-8">List Approval MPDR</h4>
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb">
                             <li class="breadcrumb-item">
                                 <a class="text-muted text-decoration-none" href="{{ route('dashboard') }}">Home</a>
                             </li>
-                            <li class="breadcrumb-item" aria-current="page">List Requisition Slip</li>
+                            <li class="breadcrumb-item" aria-current="page">List Approval MPDR</li>
                         </ol>
                     </nav>
                 </div>
@@ -37,7 +37,7 @@
     <div class="card">
         <div class="card-body">
            <div class="table-responsive">
-            <table class="table table-striped table-bordered" id="rsTable">
+            <table class="table table-striped table-bordered" id="mpdrTable">
                 <thead class="header-item">
                     <th>No</th>
                     <th>Name</th>

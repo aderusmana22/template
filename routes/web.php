@@ -17,6 +17,7 @@ use App\Http\Controllers\Master\IdeaCountsController;
 use App\Http\Controllers\Mpdr\MpdrController;
 use App\Http\Controllers\PreMpdr\PreMpdrController;
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\Rs\RequistionSlipController;
 use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\File;
@@ -78,17 +79,45 @@ Route::middleware('auth')->group(function () {
 
 
     // =============================================================PRE MPDR=================================================================
-    Route::get('/prempdr', [PreMpdrController::class, 'index'])->name('prempdr.index');
-    Route::get('/prempdr/report', [PreMpdrController::class, 'report'])->name('prempdr.report');
+    Route::prefix('prempdr')->group(function () {
+        Route::get('/', [PreMpdrController::class, 'index'])->name('prempdr.index');
+        Route::get('/create', [PreMpdrController::class, 'create'])->name('prempdr.create');
+        Route::get('/edit/{id}', [PreMpdrController::class, 'edit'])->name('prempdr.edit');
+        Route::patch('/update/{id}', [PreMpdrController::class, 'update'])->name('prempdr.update');
+        Route::delete('/destroy/{id}', [PreMpdrController::class, 'destroy'])->name('prempdr.destroy');
+        Route::get('/report', [PreMpdrController::class, 'report'])->name('prempdr.report');
+        Route::get('/approval', [PreMpdrController::class, 'approval'])->name('prempdr.approval');
+        Route::get('/log', [PreMpdrController::class, 'log'])->name('prempdr.log');
+    });
 
 
 
     // =============================================================MPDR=================================================================
-    Route::get('mpdr', [MpdrController::class, 'index'])->name('mpdr.index');
-    Route::get('mpdr/report', [MpdrController::class, 'report'])->name('mpdr.reports');
+    Route::prefix('mpdr')->group(function () {
+        Route::get('/', [MpdrController::class, 'index'])->name('mpdr.index');
+        Route::get('/create', [MpdrController::class, 'create'])->name('mpdr.create');
+        Route::get('/edit/{id}', [MpdrController::class, 'edit'])->name('mpdr.edit');
+        Route::patch('/update/{id}', [MpdrController::class, 'update'])->name('mpdr.update');
+        Route::delete('/destroy/{id}', [MpdrController::class, 'destroy'])->name('mpdr.destroy');
+        Route::get('/report', [MpdrController::class, 'report'])->name('mpdr.reports');
+        Route::get('/approval', [MpdrController::class, 'approval'])->name('mpdr.approval');
+        Route::get('/log', [MpdrController::class, 'log'])->name('mpdr.log');
+    });
 
 
     // =============================================================RS=================================================================
+
+    Route::prefix('rs')->group(function () {
+        Route::get('/', [RequistionSlipController::class, 'index'])->name('rs.index');
+        Route::get('/create', [RequistionSlipController::class, 'create'])->name('rs.create');
+        Route::get('/edit/{id}', [RequistionSlipController::class, 'edit'])->name('rs.edit');
+        Route::patch('/update/{id}', [RequistionSlipController::class, 'update'])->name('rs.update');
+        Route::delete('/destroy/{id}', [RequistionSlipController::class, 'destroy'])->name('rs.destroy');
+        Route::get('/report', [RequistionSlipController::class, 'report'])->name('rs.report');
+        Route::get('/approval', [RequistionSlipController::class, 'approval'])->name('rs.approval');
+        Route::get('/log', [RequistionSlipController::class, 'log'])->name('rs.log');
+    });
+
 
 });
 

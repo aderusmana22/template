@@ -37,7 +37,7 @@
     <div class="card">
         <div class="card-body">
            <div class="table-responsive">
-            <table class="table table-striped table-bordered" id="userTable">
+            <table class="table table-striped table-bordered" id="mpdrTable">
                 <thead class="header-item">
                     <th>No</th>
                     <th>Name</th>

@@ -10,5 +10,5 @@ class MPDR extends Model
     use HasFactory;
 
     protected $table = 'mpdr';
-    protected $guarded = [];
+    protected $guarded = ['id'];
 }

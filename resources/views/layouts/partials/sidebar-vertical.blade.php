@@ -100,7 +100,7 @@
                     <span class="hide-menu">Requisition Slip</span>
                 </li>
                 <li class="sidebar-item">
-                    <a class="sidebar-link" href="app-calendar.html" aria-expanded="false">
+                    <a class="sidebar-link" href="{{ route('rs.index') }}" aria-expanded="false">
                         <span>
                             <i class="ti ti-list-details"></i>
                         </span>
@@ -108,7 +108,7 @@
                     </a>
                 </li>
                 <li class="sidebar-item">
-                    <a class="sidebar-link" href="app-kanban.html" aria-expanded="false">
+                    <a class="sidebar-link" href="{{ route('rs.report') }}" aria-expanded="false">
                         <span>
                             <i class="ti ti-report-analytics"></i>
                         </span>
@@ -116,7 +116,7 @@
                     </a>
                 </li>
                 <li class="sidebar-item">
-                    <a class="sidebar-link" href="app-chat.html" aria-expanded="false">
+                    <a class="sidebar-link" href="{{ route('rs.approval') }}" aria-expanded="false">
                         <span>
                             <i class="ti ti-file-check"></i>
                         </span>
@@ -124,7 +124,7 @@
                     </a>
                 </li>
                 <li class="sidebar-item">
-                    <a class="sidebar-link" href="app-email.html" aria-expanded="false">
+                    <a class="sidebar-link" href="{{ route('rs.log') }}" aria-expanded="false">
                         <span>
                             <i class="ti ti-file-text"></i>
                         </span>
@@ -156,7 +156,7 @@
                     </a>
                 </li>
                 <li class="sidebar-item">
-                    <a class="sidebar-link" href="page-account-settings.html" aria-expanded="false">
+                    <a class="sidebar-link" href="{{ route('prempdr.approval') }}" aria-expanded="false">
                         <span>
                             <i class="ti ti-file-check"></i>
                         </span>
@@ -164,7 +164,7 @@
                     </a>
                 </li>
                 <li class="sidebar-item">
-                    <a class="sidebar-link" href="../landingpage/index.html" aria-expanded="false">
+                    <a class="sidebar-link" href="{{ route('prempdr.log') }}" aria-expanded="false">
                         <span>
                             <i class="ti ti-file-text"></i>
                         </span>
@@ -196,7 +196,7 @@
                     </a>
                 </li>
                 <li class="sidebar-item">
-                    <a class="sidebar-link" href="page-account-settings.html" aria-expanded="false">
+                    <a class="sidebar-link" href="{{ route('mpdr.approval') }}" aria-expanded="false">
                         <span>
                             <i class="ti ti-file-check"></i>
                         </span>
@@ -204,7 +204,7 @@
                     </a>
                 </li>
                 <li class="sidebar-item">
-                    <a class="sidebar-link" href="../landingpage/index.html" aria-expanded="false">
+                    <a class="sidebar-link" href="{{ route('mpdr.log') }}" aria-expanded="false">
                         <span>
                             <i class="ti ti-file-text"></i>
                         </span>

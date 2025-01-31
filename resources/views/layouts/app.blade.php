@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <link rel="icon" href="{{ url('frontend/assets/images/logo/sinarmeadow.png') }}">
+    <meta name="turbolinks-visit-control" content="reload">
+
 
 
     <title>{{ 'Sinar Meadow' }} - @yield('title')</title>
@@ -19,6 +21,19 @@
 
     <!-- Scripts -->
     @stack('css')
+
+    <style>
+        .turbolinks-progress-bar {
+            height: 3px;
+            background-color: #c0a01f;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 0;
+            z-index: 9999;
+            transition: width 300ms ease-out, opacity 150ms 150ms ease-in;
+        }
+    </style>
     @vite(['resources/js/app.js'])
 
 </head>
@@ -42,9 +57,6 @@
             <!--  Header Start -->
             @include('layouts.partials.header')
             <!--  Header End -->
-            {{-- sidebar horizontal --}}
-            @include('layouts.partials.sidebar-horizontal')
-            {{-- end sidebar horizontal --}}
             <div class="body-wrapper">
                 <div class="container-fluid mw-100">
                     {{ $slot }}
