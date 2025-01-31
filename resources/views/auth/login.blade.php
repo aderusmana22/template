@@ -16,10 +16,11 @@
                                 class="text-nowrap logo-img d-flex align-items-center justify-content-center gap-2 mb-4 w-100">
                                 <b class="logo-icon">
                                     {{-- <img src="{{ asset('frontend/assets') }}/images/logo/logo.png" alt="homepage" class="dark-logo" style="width: 200px"> --}}
-                                    <img src="{{ asset('assets') }}/images/logos/Logo Cita-kedua.jpg" alt="homepage"
+                                    <img src="{{ asset('frontend/assets/images/logo/logowhites.png') }}" alt="homepage"
                                         class="dark-logo img-fluid" style="max-width: 100%; height: auto;">
                                 </b>
                             </a>
+                            <h4 class="text-center text-bold">Login Page</h4>
                             <form class="theme-form" method="POST" action="{{ route('login') }}">
                                 @csrf
                                 <div class="mb-3">
